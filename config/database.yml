@@ -3,6 +3,8 @@ development:
   database: schooltoi_dev
   pool: 5
   timeout: 5000
+  host: localhost
+  port: 5432
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -12,7 +14,7 @@ test:
   database: schooltoi_test
   pool: 5
   timeout: 5000
-
+  
 production:
   adapter: postgresql
   database: schooltoi_production

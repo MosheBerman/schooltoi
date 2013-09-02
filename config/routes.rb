@@ -1,4 +1,6 @@
 Schooltoi::Application.routes.draw do
+  resources :office_hours
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
