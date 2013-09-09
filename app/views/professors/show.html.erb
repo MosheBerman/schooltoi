@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @professor.name %>
+</p>
+
+<p>
+  <b>Office building:</b>
+  <%= @professor.office_building %>
+</p>
+
+<p>
+  <b>Office number:</b>
+  <%= @professor.office_number %>
+</p>
+
+<p>
+  <b>Department:</b>
+  <%= @professor.department %>
+</p>
+
+<p>
+  <b>Is adjunct:</b>
+  <%= @professor.is_adjunct %>
+</p>
+
+<p>
+  <b>Offers appointment:</b>
+  <%= @professor.offers_appointment %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @professor.email %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @professor.phone %>
+</p>
+
+<p>
+  <b>Website:</b>
+  <%= @professor.website %>
+</p>
+
+
+<%= link_to 'Edit', edit_professor_path(@professor) %> |
+<%= link_to 'Back', professors_path %>

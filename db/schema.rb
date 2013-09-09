@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130902183459) do
+ActiveRecord::Schema.define(:version => 20130902220604) do
 
   create_table "office_hours", :force => true do |t|
     t.string   "day"
@@ -19,6 +19,20 @@ ActiveRecord::Schema.define(:version => 20130902183459) do
     t.time     "end"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "professors", :force => true do |t|
+    t.string   "name"
+    t.string   "office_building"
+    t.string   "office_number"
+    t.string   "department"
+    t.boolean  "is_adjunct"
+    t.boolean  "offers_appointment"
+    t.string   "email"
+    t.string   "phone"
+    t.string   "website"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
   end
 
 end
